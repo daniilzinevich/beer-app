@@ -12,11 +12,11 @@
 
 .beer {
   font-size: 4em;
-  color: #ffdd00;
+  color: #FFDD00;
   text-shadow: 2px 2px 5px black;
 }
 .beer--empty {
-  color: lightgrey;
+  color: #DDDDDD;
 }
 
 .container {
@@ -39,7 +39,7 @@
   font-size: 0.75em;
   background: none;
   border: none;
-  color: black;
+  color: #000000;
   padding: 1em;
   cursor: pointer;
 }
