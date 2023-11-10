@@ -1,6 +1,6 @@
 import { renderSettingsScreen } from './SettingsScreen';
 import { renderTodayScreen } from './TodayScreen';
-import { container, saveMenuItem } from './main';
+import { saveMenuItem } from './store';
 
 type Screen = (element: HTMLElement) => ((() => void) | void)
 
@@ -11,7 +11,7 @@ const screens: Record<string, Screen> = {
 };
 let screenExitCallback = () => { };
 
-export const onSelect = (item: HTMLElement) => {
+export const onSelect = (container: HTMLElement, item: HTMLElement) => {
   document
     .querySelector(".menu__item--active")
     ?.classList.remove("menu__item--active");
