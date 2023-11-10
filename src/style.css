@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.beer {
+  font-size: 4em;
+  color: #ffdd00;
+  text-shadow: 2px 2px 5px black;
+}
+.beer--empty {
+  color: lightgrey;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  height: 100vh;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  top: 0;
+  width: 100%;
+}
+.menu__item {
+  font-size: 0.75em;
+  background: none;
+  border: none;
+  color: black;
+  padding: 1em;
+  cursor: pointer;
+}
+.menu__item--active {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 1em;
+  width: 100%;
+  padding: 0 1em;
+}
+.settings__item {
+  display: flex;
+  justify-content: space-between;
+}
+.settings__item #beers {
+  width: 3em;
+}
